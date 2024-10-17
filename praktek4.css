@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    :root {
+      --black: var(--black)
+      --blue: #007bff;
+      --indigo: #6610f2;
+      --purple: #6f42c1;
+      --pink: #e83e8c;
+      --red: #dc3545;
+      --orange: #fd7e14;
+      --yellow: #ffc107;
+      --green: #28a745;
+      --teal: #20c997;
+      --cyan: #17a2b8;
+      --white: #fff;
+      --gray: #6c757d;
+      --gray-dark: #343a40;
+      --primary: #007bff;
+      --secondary: #6c757d;
+      --success: #28a745;
+      --info: #17a2b8;
+      --warning: #ffc107;
+      --danger: #dc3545;
+      --light: #f8f9fa;
+      --dark: #343a40;
+      --breakpoint-xs: 0;
+      --breakpoint-sm: 576px;
+      --breakpoint-md: 768px;
+      --breakpoint-lg: 992px;
+      --breakpoint-xl: 1200px;
+      --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    
+
+}
+
+.NavbarSaya{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgb(190, 126, 7);
+    border: 1px solid rgb(252, 206, 4);
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    
+   
+}
+@media screen and (max-width:140px){
+    .NavbarSaya{
+        width: 90%;
+    }
+}
+
+.NavbarSaya ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    background-color: rgb(190, 126, 7);
+    
+
+}
+
+.NavbarSaya .NavbarLogo{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    background-color: rgb(190, 126, 7);
+}
+.NavbarSaya .NavbarBawah{
+    color: white;
+    justify-content: space-between;
+    display: inline-block;
+    margin: 15px;
+    background-color: rgb(190, 126, 7);
+}
+
+.FontYosua1 {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0,
+      "XELA" 0,
+      "YELA" 0;
+      color: black;
+  }
+
+  .FontYosua2 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: xx-large;
+  }
+
+  .hero-left .hero-name span{
+    color: darkred;
+  }
+  
+.row{
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-wrap: wrap;
+ flex-wrap: wrap;
+ margin-right: -15px;
+ margin-left: -15px;
+}
+
+p {
+    font-size: 1rem; /* 16 px */
+    line-height: 1.9rem; /*30.4 px */
+    margin-left: 40PX;
+  }
+
+  .pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--secondaryTextColor);
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+
+  .pre-title::before{
+    content: "";
+    width: 35px;
+    height: 1px;
+    background:black;
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 7px;
+  }
+
+  .hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+  }
+
+  #hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  /*SERVICE*/
+  #services {
+    background-color:rgb(244, 245, 240);
+    padding: 30px;
+  }
+  
+  .services .pre-title {
+    margin: 0 auto;
+  }
+  
+  .services-title {
+    text-align: center;
+  }
+  
+  .service {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: rgb(244, 245, 240);
+    border-radius: var(--itemBorderRadius);
+  }
+  
+  .service h4 {
+    margin: auto;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  
+  /*Contact*/
+  #contact {
+    padding: 20px;
+  }
+  
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+  }
+  
+  .contact-form div {
+    margin-bottom: 1.4rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background: #9d9fa1;
+    border: 1px solid var(--borderColor);
+    border-radius: 3px;
+    resize: none;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: rgb(159, 43, 253);
+    color:black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  
+  
+  /* Contact Section - Right Side */
+  .contact-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: 40px;
+  }
+  
+  .contact-item-icon {
+    background:rgb(138, 110, 110);
+    width: 53px;
+    height: 53px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+  }
+  
+  .contact-item-icon svg {
+    fill: rgb(71, 67, 66);
+
+  }
+  
+  .contact-item-detail h4 {
+    margin-left: 40px;
+  }
+  
+  #skills{
+    background-color:rgb(244, 245, 240);
+    padding: 30px;
+  }
+  
